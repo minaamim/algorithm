@@ -30,6 +30,10 @@ string BW[8][8] = {
     "WBWBWBWB"
 };
 
+int WB_cnt(int x, int y);
+
+int BW_cnt(int x, int y);
+
 
 
 int main() {
@@ -42,9 +46,6 @@ int main() {
             cin >> board[i][j];
         }
     }
-    
-    
-    
     
     return 0;
 }
