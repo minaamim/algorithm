@@ -6,7 +6,7 @@
 //
 
 #include <iostream>
-//#include <algorithm>
+#include <algorithm>
 using namespace std;
 
 int main() {
@@ -18,7 +18,7 @@ int main() {
     for(int i = 0; i < n; i++)
         cin >> arr[i];
     
-  //  sort(arr[0], arr[n]);
+    sort(arr[0], arr[n]);
     
     for(int i = 0; i < n; i++)
         cout << arr[i] << "\n" ;
