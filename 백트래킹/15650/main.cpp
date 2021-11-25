@@ -22,7 +22,7 @@ void dfs(int num, int k){
         cout << "\n";
         return; //함수의 즉시 종료 및 특정 값을 넘겨줄 때
     }
-        for(int i = n; i <= n; i--){
+        for(int i = num; i <= n; i++){
             if(!visited[i]){
                 visited[i] = true; //방문 표시
                 arr[k] = i;
