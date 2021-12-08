@@ -19,3 +19,6 @@
 *.pbxproj
 *.pbxproj
 동적 계획법1/동적 계획법1.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+*.xcuserstate
+*.pbxproj
+동적 계획법1/동적 계획법1.xcodeproj/project.pbxproj
