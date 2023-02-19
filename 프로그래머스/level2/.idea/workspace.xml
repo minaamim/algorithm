@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1767cdf7-3505-4349-9dc0-ca2ecb33e14a" name="변경" comment="" />
+    <list default="true" id="1767cdf7-3505-4349-9dc0-ca2ecb33e14a" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/../../백준/java/src/dp/Boj9184.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../백준/java/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../백준/java/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../백준/java/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../백준/java/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +25,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2LUgydCldHrFYY4IE640nzirBW1" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -46,7 +52,8 @@
       <workItem from="1676440599057" duration="4089000" />
       <workItem from="1676530168986" duration="3903000" />
       <workItem from="1676536461889" duration="5159000" />
-      <workItem from="1676707262594" duration="2442000" />
+      <workItem from="1676707262594" duration="2619000" />
+      <workItem from="1676786551061" duration="1197000" />
     </task>
     <servers />
   </component>
