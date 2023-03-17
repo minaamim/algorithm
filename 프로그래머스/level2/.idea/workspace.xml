@@ -38,6 +38,26 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="Development" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stack.Development" />
+      <module name="level2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="stack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="애플리케이션.Development" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
@@ -58,7 +78,9 @@
       <workItem from="1677904450882" duration="4465000" />
       <workItem from="1678006528565" duration="1896000" />
       <workItem from="1678344288436" duration="1074000" />
-      <workItem from="1678693607482" duration="3801000" />
+      <workItem from="1678693607482" duration="4141000" />
+      <workItem from="1678771108711" duration="3573000" />
+      <workItem from="1679038212386" duration="3490000" />
     </task>
     <servers />
   </component>
