@@ -38,7 +38,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
 }</component>
-  <component name="RunManager" selected="애플리케이션.Printer">
+  <component name="RunManager" selected="애플리케이션.Truck">
     <configuration name="Development" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="stack.Development" />
       <module name="level2" />
@@ -78,8 +78,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Truck" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stack.Truck" />
+      <module name="level2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="stack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.Truck" />
         <item itemvalue="애플리케이션.Printer" />
         <item itemvalue="애플리케이션.ShortestDistance" />
         <item itemvalue="애플리케이션.Development" />
@@ -112,7 +126,7 @@
       <workItem from="1679284858343" duration="2078000" />
       <workItem from="1679377799481" duration="4502000" />
       <workItem from="1679647237242" duration="5553000" />
-      <workItem from="1679723964738" duration="6407000" />
+      <workItem from="1679723964738" duration="12788000" />
     </task>
     <servers />
   </component>
