@@ -40,20 +40,7 @@
     &quot;last_opened_file_path&quot;: &quot;/Users/mina/Documents/GitHub/algorithm/프로그래머스/level1&quot;
   }
 }</component>
-  <component name="RunManager" selected="애플리케이션.MockTest">
-    <configuration name="BOJ9663" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="backtracking.BOJ9663" />
-      <module name="test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="backtracking.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="애플리케이션.PersonalInformation">
     <configuration name="Boj11047" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="greedy.Boj11047" />
       <module name="test" />
@@ -106,13 +93,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PersonalInformation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kakaoblindrecruitment.PersonalInformation" />
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kakaoblindrecruitment.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.PersonalInformation" />
         <item itemvalue="애플리케이션.MockTest" />
         <item itemvalue="애플리케이션.KthNumber" />
         <item itemvalue="애플리케이션.Boj11399" />
         <item itemvalue="애플리케이션.Boj11047" />
-        <item itemvalue="애플리케이션.BOJ9663" />
       </list>
     </recent_temporary>
   </component>
@@ -154,7 +154,9 @@
       <workItem from="1677476336143" duration="1960000" />
       <workItem from="1678345639653" duration="3158000" />
       <workItem from="1679646508869" duration="723000" />
-      <workItem from="1679894194247" duration="3405000" />
+      <workItem from="1679894194247" duration="4226000" />
+      <workItem from="1679905202605" duration="16000" />
+      <workItem from="1680323325793" duration="6197000" />
     </task>
     <servers />
   </component>

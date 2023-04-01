@@ -1,0 +1,53 @@
+package kakaoblindrecruitment;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class PersonalInformation {
+
+    public static void main(String args[]) {
+        String today = "2022.05.19";
+        String[] terms = {"A 6", "B 12", "C 3"};
+        String[] privacies = {"2021.05.02 A", "2021.07.01 B", "2022.02.19 C", "2022.02.20 C"};
+        solution(today, terms, privacies);
+    }
+
+
+    public static int[] solution(String today, String[] terms, String[] privacies) {
+
+        ArrayList answer = new ArrayList();
+        HashMap<String, Integer> map = new HashMap<>();
+
+        int date = getDate(today);
+
+        for(String t : terms) {
+            String[] term = t.split(" ");
+            map.put(term[0], Integer.parseInt(term[1]));
+        }
+
+        for(int i = 0; i < privacies.length; i++) {
+            String[] privacy = privacies[i].split(" ");
+            if(getDate(privacy[0]) + (map.get(privacy[1]) * 28) <= date) {
+                answer.add(i + 1);
+            }
+        }
+
+
+        return answer.stream().mapToInt(integer -> (int) integer).toArray();
+
+    }
+
+    private static int getDate(String today) {
+        String[] date = today.split("\\.");
+
+        for(int i = 0; i < date.length; i++) {
+            System.out.println(date[i]);
+        }
+
+        int year = Integer.parseInt(date[0]);
+        int month = Integer.parseInt(date[1]);
+        int day = Integer.parseInt(date[2]);
+        return (year * 12 * 28) + (month * 28) + day;
+    }
+
+}
