@@ -24,7 +24,7 @@ public class ParkingFee {
         //차 번호, 입차 시간
         HashMap<String, String> map = new HashMap<>();
         //차 번호, 총 주차 시간
-        HashMap<String, Integer> fee = new HashMap<>();
+        Map<String, Integer> fee = new TreeMap<>();
         
         for(String str : records) {
             fee.put(str.split(" ")[1], 0);
@@ -39,11 +39,6 @@ public class ParkingFee {
                 String[] end = record[0].split(":");
                 int hour = Integer.parseInt(end[0]) - Integer.parseInt(enter[0]);
                 int minute = Integer.parseInt(end[1]) - Integer.parseInt(enter[1]);
-
-                System.out.println("record: " + record[1]);
-                System.out.println("hour: " + hour);
-                System.out.println("minute: " + minute);
-
 
                 fee.replace(record[1], fee.get(record[1]) + (hour * 60) + minute);
                 map.remove(record[1]);
@@ -60,34 +55,25 @@ public class ParkingFee {
             int hour = 23 - Integer.parseInt(enter[0]);
             int minute = 59 - Integer.parseInt(enter[1]);
 
-            System.out.println("key: " + key);
-            System.out.println("minute: " + minute);
-            System.out.println("exTime: " + fee.get(key));
             int time = fee.get(key) + hour * 60 + minute;
-            System.out.println("time: " + time);
 
             fee.replace(key, fee.get(key) + (hour * 60) + minute);
             map.remove(key);
         }
 
-        List<Map.Entry<String, Integer>> list = new ArrayList<>(fee.entrySet());
-
-//        list.sort(((o1, o2) -> Integer.parseInt(o1.getKey()) - Integer.parseInt(o2.getKey())));
-        list.sort((Comparator.comparingInt(o -> Integer.parseInt(o.getKey()))));
-
         //요금 계산
         answer = new int[fee.size()];
+        int i = 0;
 
-        for(int i = 0; i < fee.size(); i++) {
-            if(list.get(i).getValue() > fees[0]) {
-                answer[i] = fees[1] + (int) Math.ceil((list.get(i).getValue() - fees[0]) / (double)fees[2]) * fees[3];
-            } else {
+        for(String key : fee.keySet()) {
+            int time = fee.get(key);
+
+            if(time > fees[0])
+                answer[i] = fees[1] + (int) Math.ceil((fee.get(key) - fees[0]) / (double)fees[2]) * fees[3];
+            else
                 answer[i] = fees[1];
-            }
-        }
 
-        for(int i : answer) {
-            System.out.println(i);
+            i++;
         }
 
         return answer;
