@@ -1,7 +1,11 @@
-package kakaotechinternship2022;
+package kakaotechinternship;
 
 import java.util.LinkedList;
 import java.util.Queue;
+
+/**
+ * 2022
+ */
 
 public class TwoQueue {
 
