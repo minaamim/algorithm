@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fa382ca7-8fa3-4b52-8229-182a1d1d6bbb" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/../../프로그래머스/level2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../프로그래머스/level2/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="fa382ca7-8fa3-4b52-8229-182a1d1d6bbb" name="변경" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,7 +65,7 @@
       <workItem from="1671006535329" duration="12974000" />
       <workItem from="1671202244665" duration="50000" />
       <workItem from="1671202304256" duration="273000" />
-      <workItem from="1676785284421" duration="6022000" />
+      <workItem from="1676785284421" duration="6908000" />
     </task>
     <servers />
   </component>
