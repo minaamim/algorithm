@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d114ab90-c298-4e08-af66-784d0195de78" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/../../백준/java/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../백준/java/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../level2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../level2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../level2/src/kakaoblind/ParkingFee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../level2/src/kakaoblind/ParkingFee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../level3/src/dfsbfs/TravelRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/../level3/src/dfsbfs/TravelRoute.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,13 +41,13 @@
     &quot;last_opened_file_path&quot;: &quot;/Users/mina/Documents/GitHub/algorithm/프로그래머스/level1&quot;
   }
 }</component>
-  <component name="RunManager" selected="애플리케이션.NumericStrings">
-    <configuration name="Lotto" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="devmatching2021.Lotto" />
+  <component name="RunManager" selected="애플리케이션.FailureRate">
+    <configuration name="FailureRate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kakaoblindrecruitment.FailureRate" />
       <module name="test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="devmatching2021.*" />
+          <option name="PATTERN" value="kakaoblindrecruitment.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -55,12 +55,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MockTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="greedy.MockTest" />
+    <configuration name="Lotto" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="devmatching2021.Lotto" />
       <module name="test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="greedy.*" />
+          <option name="PATTERN" value="devmatching2021.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,11 +109,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.FailureRate" />
         <item itemvalue="애플리케이션.NumericStrings" />
         <item itemvalue="애플리케이션.SecretMap" />
         <item itemvalue="애플리케이션.Lotto" />
         <item itemvalue="애플리케이션.PersonalInformation" />
-        <item itemvalue="애플리케이션.MockTest" />
       </list>
     </recent_temporary>
   </component>
@@ -163,7 +163,8 @@
       <workItem from="1680849122711" duration="4000" />
       <workItem from="1680950799071" duration="1598000" />
       <workItem from="1681022964033" duration="3295000" />
-      <workItem from="1681134960685" duration="606000" />
+      <workItem from="1681134960685" duration="990000" />
+      <workItem from="1681451873072" duration="3881000" />
     </task>
     <servers />
   </component>
