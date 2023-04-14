@@ -1,4 +1,4 @@
-package kakaointernshipp2021;
+package kakaointernship;
 
 public class NumericStrings {
 
