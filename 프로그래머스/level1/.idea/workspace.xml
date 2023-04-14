@@ -41,13 +41,26 @@
     &quot;last_opened_file_path&quot;: &quot;/Users/mina/Documents/GitHub/algorithm/프로그래머스/level1&quot;
   }
 }</component>
-  <component name="RunManager" selected="애플리케이션.FailureRate">
+  <component name="RunManager" selected="애플리케이션.Keypad">
     <configuration name="FailureRate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="kakaoblindrecruitment.FailureRate" />
       <module name="test" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="kakaoblindrecruitment.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Keypad" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kakaointernship.Keypad" />
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kakaointernship.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -69,24 +82,11 @@
       </method>
     </configuration>
     <configuration name="NumericStrings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kakaointernshipp2021.NumericStrings" />
+      <option name="MAIN_CLASS_NAME" value="kakaointernship.NumericStrings" />
       <module name="test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="kakaointernshipp2021.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PersonalInformation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kakaoblindrecruitment.PersonalInformation" />
-      <module name="test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="kakaoblindrecruitment.*" />
+          <option name="PATTERN" value="kakaointernship.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,11 +109,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.Keypad" />
         <item itemvalue="애플리케이션.FailureRate" />
-        <item itemvalue="애플리케이션.NumericStrings" />
+        <item itemvalue="애플리케이션.kakaointernship.NumericStrings" />
         <item itemvalue="애플리케이션.SecretMap" />
         <item itemvalue="애플리케이션.Lotto" />
-        <item itemvalue="애플리케이션.PersonalInformation" />
       </list>
     </recent_temporary>
   </component>
@@ -164,7 +164,10 @@
       <workItem from="1680950799071" duration="1598000" />
       <workItem from="1681022964033" duration="3295000" />
       <workItem from="1681134960685" duration="990000" />
-      <workItem from="1681451873072" duration="3881000" />
+      <workItem from="1681451873072" duration="4266000" />
+      <workItem from="1681456322376" duration="1298000" />
+      <workItem from="1681463650127" duration="27000" />
+      <workItem from="1681464987115" duration="4015000" />
     </task>
     <servers />
   </component>
