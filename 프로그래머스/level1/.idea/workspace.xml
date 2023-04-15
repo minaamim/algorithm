@@ -41,7 +41,20 @@
     &quot;last_opened_file_path&quot;: &quot;/Users/mina/Documents/GitHub/algorithm/프로그래머스/level1&quot;
   }
 }</component>
-  <component name="RunManager" selected="애플리케이션.Keypad">
+  <component name="RunManager" selected="애플리케이션.DartsGame">
+    <configuration name="DartsGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kakaoblindrecruitment.DartsGame" />
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kakaoblindrecruitment.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FailureRate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="kakaoblindrecruitment.FailureRate" />
       <module name="test" />
@@ -81,19 +94,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NumericStrings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kakaointernship.NumericStrings" />
-      <module name="test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="kakaointernship.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SecretMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="kakaoblindrecruitment.SecretMap" />
       <module name="test" />
@@ -109,9 +109,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.DartsGame" />
         <item itemvalue="애플리케이션.Keypad" />
         <item itemvalue="애플리케이션.FailureRate" />
-        <item itemvalue="애플리케이션.kakaointernship.NumericStrings" />
         <item itemvalue="애플리케이션.SecretMap" />
         <item itemvalue="애플리케이션.Lotto" />
       </list>
@@ -167,7 +167,10 @@
       <workItem from="1681451873072" duration="4266000" />
       <workItem from="1681456322376" duration="1298000" />
       <workItem from="1681463650127" duration="27000" />
-      <workItem from="1681464987115" duration="4015000" />
+      <workItem from="1681464987115" duration="5949000" />
+      <workItem from="1681490803299" duration="10000" />
+      <workItem from="1681517329509" duration="37000" />
+      <workItem from="1681567042615" duration="5256000" />
     </task>
     <servers />
   </component>
