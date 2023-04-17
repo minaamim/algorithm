@@ -41,22 +41,9 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="애플리케이션.NumberGame">
+  <component name="RunManager" selected="애플리케이션.OpenChat">
     <configuration name="CT2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="oliveyoung.CT2" />
-      <module name="level2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="oliveyoung.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CodingTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="oliveyoung.CodingTest" />
       <module name="level2" />
       <extension name="coverage">
         <pattern>
@@ -107,13 +94,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OpenChat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kakaoblind.OpenChat" />
+      <module name="level2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kakaoblind.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.OpenChat" />
         <item itemvalue="애플리케이션.NumberGame" />
         <item itemvalue="애플리케이션.Compression" />
         <item itemvalue="애플리케이션.NewsClustering" />
         <item itemvalue="애플리케이션.CT2" />
-        <item itemvalue="애플리케이션.CodingTest" />
       </list>
     </recent_temporary>
   </component>
@@ -164,7 +164,7 @@
       <workItem from="1681546871819" duration="4207000" />
       <workItem from="1681552322418" duration="609000" />
       <workItem from="1681629429645" duration="7288000" />
-      <workItem from="1681716867726" duration="1760000" />
+      <workItem from="1681716867726" duration="5163000" />
     </task>
     <servers />
   </component>
