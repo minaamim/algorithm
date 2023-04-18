@@ -36,46 +36,21 @@ public class SortFilename {
 
         File[] fileInfo = new File[files.length];
 
-        Map<Integer, File> map = new HashMap<>();
+        for(int i = 0; i < files.length; i++) {
 
-        for(int index = 0; index < files.length; index++) {
+            String file = files[i].toUpperCase();
 
-            String file = files[index].toUpperCase();
-            String head = null, number = "", tail = null;
+            String[] split = splitName(file);
 
-            for(int i = 0; i < file.length() - 1; i++) {
-                Character now = file.charAt(i);
-
-                if('0' <= now && now <= '9') {
-                    head = file.substring(0, i);
-                    number += now;
-
-                    for(int j = i+1; j < file.length(); j++) {
-                        if('0' <= file.charAt(j) && file.charAt(j) <= '9') {
-                            number += file.charAt(j);
-                        } else {
-                            i = j;
-                            tail = file.substring(j);
-                            break;
-                        }
-                    }
-
-                }
-            }
-
-            File temp = new File(files[index], head, Integer.parseInt(number), tail);
-            fileInfo[index] = temp;
-            map.put(index, temp);
+            File temp = new File(files[i], split[0], Integer.parseInt(split[1]), split[2]);
+            fileInfo[i] = temp;
         }
 
-        Arrays.sort(fileInfo, new Comparator<File>() {
-            @Override
-            public int compare(File o1, File o2) {
-                if((o1.head).equals(o2.head)) {
-                    return o1.number - o2.number;
-                } else {
-                    return (o1.head).compareTo(o2.head);
-                }
+        Arrays.sort(fileInfo, (o1, o2) -> {
+            if((o1.head).equals(o2.head)) {
+                return o1.number - o2.number;
+            } else {
+                return (o1.head).compareTo(o2.head);
             }
         });
 
@@ -85,5 +60,38 @@ public class SortFilename {
         }
 
         return answer;
+    }
+
+    static String[] splitName(String name) {
+        String[] str = new String[3];
+
+        str[0] = "";
+        str[1] = "";
+        str[2] = "";
+
+        int index = 0;
+
+        for(int i = 0; i < name.length(); i++) {
+            Character c = name.charAt(i);
+
+            if (index == 0 && !Character.isDigit(c)) {
+                str[0] += c.toString();
+                continue;
+            }
+
+            if(index == 0 && Character.isDigit(c)) index++;
+
+            if(index == 1 && Character.isDigit(c)) {
+                str[1] += c.toString();
+                continue;
+            }
+
+            if(index == 1 && !Character.isDigit(c)) {
+                str[2] = name.substring(i);
+                break;
+            }
+        }
+
+        return str;
     }
 }
