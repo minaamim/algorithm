@@ -41,7 +41,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="애플리케이션.SortFilename">
+  <component name="RunManager" selected="애플리케이션.Friends4Block">
     <configuration name="Compression" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="kakaoblind.Compression" />
       <module name="level2" />
@@ -55,8 +55,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NewsClustering" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kakaoblind.NewsClustering" />
+    <configuration name="Friends4Block" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kakaoblind.Friends4Block" />
       <module name="level2" />
       <extension name="coverage">
         <pattern>
@@ -109,11 +109,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.Friends4Block" />
         <item itemvalue="애플리케이션.SortFilename" />
         <item itemvalue="애플리케이션.OpenChat" />
         <item itemvalue="애플리케이션.NumberGame" />
         <item itemvalue="애플리케이션.Compression" />
-        <item itemvalue="애플리케이션.NewsClustering" />
       </list>
     </recent_temporary>
   </component>
@@ -165,7 +165,8 @@
       <workItem from="1681552322418" duration="609000" />
       <workItem from="1681629429645" duration="7288000" />
       <workItem from="1681716867726" duration="5355000" />
-      <workItem from="1681800895608" duration="7790000" />
+      <workItem from="1681800895608" duration="7955000" />
+      <workItem from="1681975095644" duration="5191000" />
     </task>
     <servers />
   </component>
