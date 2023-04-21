@@ -1,0 +1,86 @@
+package kakaoblind;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class TheSong {
+
+    public static void main(String args[]) {
+        String m1 = "ABCDEFG";
+        String[] musicinfos1 = { "12:00,12:14,HELLO,CDEFGAB", "13:00,13:05,WORLD,ABCDEF" };
+
+        String m2 = "CC#BCC#BCC#BCC#B";
+        String[] musicinfos2 = { "03:00,03:30,FOO,CC#B", "04:00,04:08,BAR,CC#BCC#BCC#B" };
+
+        String m3 = "ABC";
+        String[] musicinfos3 = { "12:00,12:14,HELLO,C#DEFGAB", "13:00,13:05,WORLD,ABCDEF" };
+
+//        System.out.println(solution(m1, musicinfos1));
+//        System.out.println(solution(m2, musicinfos2));
+        System.out.println(solution(m3, musicinfos3));
+    }
+
+    public static String solution(String m, String[] musicinfos) {
+        String answer = "";
+
+        List<Music> musicList = new ArrayList<>();
+
+        for(int i = 0; i < musicinfos.length; i++) {
+            String[] str = musicinfos[i].split(",");
+            int time = calculatePlaytime(str[0], str[1]);
+            String name = str[2];
+            String sound = str[3];
+
+            if(time < sound.length()) sound = sound.substring(0, time);
+            else if(time > sound.length()) {
+                int range = time - sound.length();
+                for(int j = 0; j < range; j++)
+                    sound += sound.charAt(j % sound.length());
+            }
+
+            if(sound.contains(m)) {
+                musicList.add(new Music(i, name, time));
+
+                System.out.println("name: " + name);
+                System.out.println("sound: " + sound);
+            }
+        }
+
+        musicList.sort((o1, o2) -> {
+            if(o1.time == o2.time)
+                return o1.index - o2.index;
+            else
+                return o2.time - o1.time;
+        });
+
+        if(musicList.get(0).name == null)
+            answer = "(None)";
+        else answer = musicList.get(0).name;
+
+        return answer;
+    }
+
+    static int calculatePlaytime(String start, String end) {
+        int time = 0;
+
+        String[] startTime = start.split(":");
+        String[] endTime = end.split(":");
+
+        time = (Integer.parseInt(endTime[0]) * 60 + Integer.parseInt(endTime[1])) - (Integer.parseInt(startTime[0]) * 60 + Integer.parseInt(startTime[1]));
+
+        return time;
+    }
+
+    static class Music {
+        int index;
+        String name;
+        int time;
+
+        public Music(int index, String name, int time) {
+            this.index = index;
+            this.name = name;
+            this.time = time;
+        }
+    }
+
+}
