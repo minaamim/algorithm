@@ -15,8 +15,8 @@ public class TheSong {
         String m3 = "ABC";
         String[] musicinfos3 = { "12:00,12:14,HELLO,C#DEFGAB", "13:00,13:05,WORLD,ABCDEF" };
 
-//        System.out.println(solution(m1, musicinfos1));
-//        System.out.println(solution(m2, musicinfos2));
+        System.out.println(solution(m1, musicinfos1));
+        System.out.println(solution(m2, musicinfos2));
         System.out.println(solution(m3, musicinfos3));
     }
 
@@ -26,6 +26,7 @@ public class TheSong {
         List<Music> musicList = new ArrayList<>();
 
         for(int i = 0; i < musicinfos.length; i++) {
+
             String[] str = musicinfos[i].split(",");
             int time = calculatePlaytime(str[0], str[1]);
             String name = str[2];
@@ -34,15 +35,37 @@ public class TheSong {
             if(time < sound.length()) sound = sound.substring(0, time);
             else if(time > sound.length()) {
                 int range = time - sound.length();
-                for(int j = 0; j < range; j++)
-                    sound += sound.charAt(j % sound.length());
+
+                int cnt = 0;
+
+                for(int j = 0; j < time; j++) {
+
+                    if(cnt == range)
+                        break;
+
+                    Character now = sound.charAt(j % sound.length());
+
+                    Character next = sound.charAt((j + 1) % sound.length());
+
+                    if(next == '#') {
+                        sound += now.toString() + next.toString();
+                        j++;
+                        cnt++;
+                    } else {
+                        sound += sound.charAt(j % sound.length());
+                        cnt++;
+                    }
+                }
             }
 
-            if(sound.contains(m)) {
-                musicList.add(new Music(i, name, time));
 
-                System.out.println("name: " + name);
-                System.out.println("sound: " + sound);
+
+            if(sound.contains(m)) {
+                sound = sound.replace(m, "!");
+
+                if(sound.charAt(sound.indexOf('!') + 1) != '#') {
+                    musicList.add(new Music(i, name, time));
+                }
             }
         }
 
