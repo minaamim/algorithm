@@ -15,9 +15,9 @@ public class TheSong {
         String m3 = "ABC";
         String[] musicinfos3 = { "12:00,12:14,HELLO,C#DEFGAB", "13:00,13:05,WORLD,ABCDEF" };
 
-        System.out.println(solution(m1, musicinfos1));
+//        System.out.println(solution(m1, musicinfos1));
         System.out.println(solution(m2, musicinfos2));
-        System.out.println(solution(m3, musicinfos3));
+//        System.out.println(solution(m3, musicinfos3));
     }
 
     public static String solution(String m, String[] musicinfos) {
@@ -30,43 +30,24 @@ public class TheSong {
             String[] str = musicinfos[i].split(",");
             int time = calculatePlaytime(str[0], str[1]);
             String name = str[2];
-            String sound = str[3];
+            String sound = convert(str[3]);
+            m = convert(m);
+
 
             if(time < sound.length()) sound = sound.substring(0, time);
             else if(time > sound.length()) {
+
                 int range = time - sound.length();
 
-                int cnt = 0;
-
-                for(int j = 0; j < time; j++) {
-
-                    if(cnt == range)
-                        break;
-
-                    Character now = sound.charAt(j % sound.length());
-
-                    Character next = sound.charAt((j + 1) % sound.length());
-
-                    if(next == '#') {
-                        sound += now.toString() + next.toString();
-                        j++;
-                        cnt++;
-                    } else {
-                        sound += sound.charAt(j % sound.length());
-                        cnt++;
-                    }
+                for(int j = 0; j < range; j++) {
+                    sound += sound.charAt(j % sound.length());
                 }
+
             }
-
-
-
             if(sound.contains(m)) {
-                sound = sound.replace(m, "!");
-
-                if(sound.charAt(sound.indexOf('!') + 1) != '#') {
-                    musicList.add(new Music(i, name, time));
-                }
+                musicList.add(new Music(i, name, time));
             }
+
         }
 
         musicList.sort((o1, o2) -> {
@@ -81,6 +62,15 @@ public class TheSong {
         else answer = musicList.get(0).name;
 
         return answer;
+    }
+
+    static String convert(String str) {
+        str = str.replaceAll("A#", "a");
+        str = str.replaceAll("C#", "c");
+        str = str.replaceAll("D#", "d");
+        str = str.replaceAll("F#", "f");
+        str = str.replaceAll("G#", "g");
+        return str;
     }
 
     static int calculatePlaytime(String start, String end) {
