@@ -21,9 +21,7 @@ public class TheSong {
     }
 
     public static String solution(String m, String[] musicinfos) {
-        String answer = "";
-
-        List<Music> musicList = new ArrayList<>();
+        String answer = "(None)";
 
         for(int i = 0; i < musicinfos.length; i++) {
 
@@ -32,34 +30,25 @@ public class TheSong {
             String name = str[2];
             String sound = convert(str[3]);
             m = convert(m);
-
+            int max = 0;
 
             if(time < sound.length()) sound = sound.substring(0, time);
             else if(time > sound.length()) {
-
                 int range = time - sound.length();
 
-                for(int j = 0; j < range; j++) {
+                for(int j = 0; j < range; j++)
                     sound += sound.charAt(j % sound.length());
-                }
 
             }
+
             if(sound.contains(m)) {
-                musicList.add(new Music(i, name, time));
+                if(max < time) {
+                    max = time;
+                    answer = name;
+                }
             }
 
         }
-
-        musicList.sort((o1, o2) -> {
-            if(o1.time == o2.time)
-                return o1.index - o2.index;
-            else
-                return o2.time - o1.time;
-        });
-
-        if(musicList.get(0).name == null)
-            answer = "(None)";
-        else answer = musicList.get(0).name;
 
         return answer;
     }
@@ -84,16 +73,5 @@ public class TheSong {
         return time;
     }
 
-    static class Music {
-        int index;
-        String name;
-        int time;
-
-        public Music(int index, String name, int time) {
-            this.index = index;
-            this.name = name;
-            this.time = time;
-        }
-    }
 
 }
