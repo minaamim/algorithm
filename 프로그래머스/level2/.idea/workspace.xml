@@ -55,8 +55,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NumberGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kakaoblind.NumberGame" />
+    <configuration name="OpenChat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kakaoblind.OpenChat" />
       <module name="level2" />
       <extension name="coverage">
         <pattern>
@@ -68,12 +68,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OpenChat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kakaoblind.OpenChat" />
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dchamps.Solution" />
       <module name="level2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="kakaoblind.*" />
+          <option name="PATTERN" value="dchamps.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,10 +110,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="애플리케이션.TheSong" />
+        <item itemvalue="애플리케이션.Solution" />
         <item itemvalue="애플리케이션.Friends4Block" />
         <item itemvalue="애플리케이션.SortFilename" />
         <item itemvalue="애플리케이션.OpenChat" />
-        <item itemvalue="애플리케이션.NumberGame" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +168,9 @@
       <workItem from="1681800895608" duration="7955000" />
       <workItem from="1681975095644" duration="5444000" />
       <workItem from="1682074995530" duration="4243000" />
-      <workItem from="1682131313520" duration="3391000" />
+      <workItem from="1682131313520" duration="4175000" />
+      <workItem from="1682143510315" duration="5241000" />
+      <workItem from="1682250411740" duration="2425000" />
     </task>
     <servers />
   </component>

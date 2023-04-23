@@ -15,41 +15,41 @@ public class TheSong {
         String m3 = "ABC";
         String[] musicinfos3 = { "12:00,12:14,HELLO,C#DEFGAB", "13:00,13:05,WORLD,ABCDEF" };
 
-//        System.out.println(solution(m1, musicinfos1));
+        String m4 = "ABCDEFG";
+        String[] musicinfos4 = {"11:50,12:04,HELLO,CDEFGAB", "12:57,13:11,BYE,CDEFGAB"};
+
+        String m5 = "A";
+        String[] musicinfos5 ={"00:00,23:59,HELL,CA#", "00:00,23:59,HI,CA#"};
+
+        System.out.println(solution(m1, musicinfos1));
         System.out.println(solution(m2, musicinfos2));
-//        System.out.println(solution(m3, musicinfos3));
+        System.out.println(solution(m3, musicinfos3));
+        System.out.println(solution(m4, musicinfos4));
+        System.out.println(solution(m5, musicinfos5));
     }
 
     public static String solution(String m, String[] musicinfos) {
         String answer = "(None)";
+        int max = 0;
 
         for(int i = 0; i < musicinfos.length; i++) {
-
             String[] str = musicinfos[i].split(",");
             int time = calculatePlaytime(str[0], str[1]);
             String name = str[2];
             String sound = convert(str[3]);
             m = convert(m);
-            int max = 0;
 
-            if(time < sound.length()) sound = sound.substring(0, time);
-            else if(time > sound.length()) {
-                int range = time - sound.length();
+            while(sound.length() < time)
+                sound += sound;
 
-                for(int j = 0; j < range; j++)
-                    sound += sound.charAt(j % sound.length());
+            sound = sound.substring(0, time);
 
+            if(sound.contains(m) && max < time) {
+                max = time;
+                answer = name;
+                System.out.println("max: " + name + " " + max);
             }
-
-            if(sound.contains(m)) {
-                if(max < time) {
-                    max = time;
-                    answer = name;
-                }
-            }
-
         }
-
         return answer;
     }
 
@@ -59,6 +59,7 @@ public class TheSong {
         str = str.replaceAll("D#", "d");
         str = str.replaceAll("F#", "f");
         str = str.replaceAll("G#", "g");
+        str = str.replaceAll("E#", "e");
         return str;
     }
 
