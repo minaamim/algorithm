@@ -19,21 +19,15 @@ public class NumberGame {
     public static int solution(int[] A, int[] B) {
         int answer = 0;
 
-        List<Integer> list = new ArrayList<>();
+        Arrays.sort(A);
+        Arrays.sort(B);
 
-        for(int i : B) list.add(i);
-
-        list.sort((o1, o2) -> o1 - o2);
-
-        for(int i = 0; i < A.length; i++) {
-            for(int j = 0; j < list.size(); j++) {
-
-                if(list.get(j) > A[i]) {
-                    answer++;
-                    list.remove(j);
-                    break;
-                }
-            }
+        int b = B.length - 1;
+        for(int i = A.length - 1; i >= 0; i--) {
+           if(B[b] > A[i]) {
+               answer++;
+               b--;
+           }
         }
         return answer;
     }
