@@ -42,13 +42,26 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="애플리케이션.VisitLength">
-    <configuration name="Friends4Block" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kakaoblind.Friends4Block" />
+  <component name="RunManager" selected="애플리케이션.HIndex">
+    <configuration name="HIndex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sorting.HIndex" />
       <module name="level2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="kakaoblind.*" />
+          <option name="PATTERN" value="sorting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RotateMatrixBorders" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="devmatching.RotateMatrixBorders" />
+      <module name="level2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="devmatching.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -62,19 +75,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="summerwintercoding.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dchamps.Solution" />
-      <module name="level2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dchamps.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,11 +110,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.HIndex" />
+        <item itemvalue="애플리케이션.RotateMatrixBorders" />
         <item itemvalue="애플리케이션.VisitLength" />
         <item itemvalue="애플리케이션.SkillTree" />
         <item itemvalue="애플리케이션.TheSong" />
-        <item itemvalue="애플리케이션.Solution" />
-        <item itemvalue="애플리케이션.Friends4Block" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +174,11 @@
       <workItem from="1682250411740" duration="3107000" />
       <workItem from="1682315454911" duration="755000" />
       <workItem from="1682325659213" duration="4440000" />
-      <workItem from="1682407038172" duration="5899000" />
+      <workItem from="1682407038172" duration="7187000" />
+      <workItem from="1682585397086" duration="3716000" />
+      <workItem from="1682595181638" duration="419000" />
+      <workItem from="1682661403428" duration="703000" />
+      <workItem from="1682664725318" duration="3322000" />
     </task>
     <servers />
   </component>
