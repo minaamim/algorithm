@@ -11,28 +11,18 @@ public class Boj1463 {
 
         int N = Integer.parseInt(br.readLine());
         dp = new int[N + 1];
-        System.out.println(recursion(N));
-    }
 
-    static int recursion(int N) {
-        int min = 0;
+        for(int i = 2; i <= N; i++) {
+            dp[i] = dp[i - 1] + 1;
 
-        if(N == 1) return 0;
-        if(dp[N] > 0) return dp[N];
+            if(i % 2 == 0 && dp[i/2] < dp[i]) {
+                dp[i] = dp[i/2] + 1;
+            }
 
-        min = recursion(N - 1) + 1;
-
-        if(N % 2 == 0) {
-            int temp = recursion(N / 2) + 1;
-            min = temp < min ? temp : min;
+            if(i % 3 == 0 && dp[i/3] < dp[i]) {
+                dp[i] = dp[i/3] + 1;
+            }
         }
-
-        if(N % 3 == 0) {
-            int temp = recursion(N / 3) + 1;
-            min = temp < min ? temp : min;
+        System.out.println(dp[N]);
         }
-        return min;
-    }
-
-
 }
