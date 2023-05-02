@@ -10,18 +10,20 @@ public class Boj9095 {
 
         int N = Integer.parseInt(br.readLine());
 
-        for(int i = 0; i <= N; i++) {
-            int num = Integer.parseInt(br.readLine());
+        int[] dp = new int[11];
+        dp[0] = 1;
 
-            int[] dp = new int[num+1];
-            dp[1] = 1;
-            dp[2] = 2;
-            dp[3] = 4;
-
-            for(int j = 4; j <= num; j++) {
-                dp[j] = dp[j-1] + dp[j-2] + dp[j-3];
+        for(int i = 1; i <= 10; i++) {
+            for(int j = 1; j <= 3; j++) {
+                if(i - j >= 0) {
+                    dp[i] += dp[i - j];
+                }
             }
-            System.out.println(dp[num]);
+        }
+
+        while(N-- > 0) {
+            int n = Integer.parseInt(br.readLine());
+            System.out.println(dp[n]);
         }
 
     }
