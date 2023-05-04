@@ -42,7 +42,7 @@
     &quot;last_opened_file_path&quot;: &quot;/Users/mina/Documents/GitHub/algorithm/프로그래머스/level1&quot;
   }
 }</component>
-  <component name="RunManager" selected="애플리케이션.MakePrimeNum">
+  <component name="RunManager" selected="애플리케이션.PersonalInfo">
     <configuration name="DartsGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="kakaoblindrecruitment.DartsGame" />
       <module name="test" />
@@ -95,8 +95,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SecretMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kakaoblindrecruitment.SecretMap" />
+    <configuration name="PersonalInfo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kakaoblindrecruitment.PersonalInfo" />
       <module name="test" />
       <extension name="coverage">
         <pattern>
@@ -110,11 +110,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.PersonalInfo" />
         <item itemvalue="애플리케이션.MakePrimeNum" />
         <item itemvalue="애플리케이션.DartsGame" />
         <item itemvalue="애플리케이션.Keypad" />
         <item itemvalue="애플리케이션.FailureRate" />
-        <item itemvalue="애플리케이션.SecretMap" />
       </list>
     </recent_temporary>
   </component>
@@ -173,7 +173,8 @@
       <workItem from="1681517329509" duration="37000" />
       <workItem from="1681567042615" duration="5383000" />
       <workItem from="1681629424908" duration="597000" />
-      <workItem from="1682314357086" duration="752000" />
+      <workItem from="1682314357086" duration="1087000" />
+      <workItem from="1682998076445" duration="2477000" />
     </task>
     <servers />
   </component>
