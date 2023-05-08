@@ -41,7 +41,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="애플리케이션.VowelDictionary">
+  <component name="RunManager" selected="애플리케이션.RotateMatrixBorders">
     <configuration name="HIndex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sorting.HIndex" />
       <module name="level2" />
@@ -109,10 +109,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.RotateMatrixBorders" />
         <item itemvalue="애플리케이션.VowelDictionary" />
         <item itemvalue="애플리케이션.RotateParentheses" />
         <item itemvalue="애플리케이션.HIndex" />
-        <item itemvalue="애플리케이션.RotateMatrixBorders" />
         <item itemvalue="애플리케이션.VisitLength" />
       </list>
     </recent_temporary>
@@ -180,7 +180,9 @@
       <workItem from="1682664725318" duration="8134000" />
       <workItem from="1682918582978" duration="597000" />
       <workItem from="1683001466823" duration="1761000" />
-      <workItem from="1683264419896" duration="3481000" />
+      <workItem from="1683264419896" duration="4329000" />
+      <workItem from="1683381175040" duration="7000" />
+      <workItem from="1683528568957" duration="7066000" />
     </task>
     <servers />
   </component>
