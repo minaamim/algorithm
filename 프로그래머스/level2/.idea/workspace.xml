@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1767cdf7-3505-4349-9dc0-ca2ecb33e14a" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/../level1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../level1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../level3/src/dfsbfs/TravelRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/../level3/src/dfsbfs/TravelRoute.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../level3/src/kakao/ShuttleBus.java" beforeDir="false" afterPath="$PROJECT_DIR$/../level3/src/kakao/ShuttleBus.java" afterDir="false" />
     </list>
@@ -182,7 +183,8 @@
       <workItem from="1683001466823" duration="1761000" />
       <workItem from="1683264419896" duration="4329000" />
       <workItem from="1683381175040" duration="7000" />
-      <workItem from="1683528568957" duration="7066000" />
+      <workItem from="1683528568957" duration="8648000" />
+      <workItem from="1683623959886" duration="3608000" />
     </task>
     <servers />
   </component>

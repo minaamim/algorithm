@@ -52,39 +52,26 @@ public class RotateMatrixBorders {
             int y1 = queries[i][0] - 1;
             int x2 = queries[i][3] - 1;
             int y2 = queries[i][2] - 1;
-            int min = 100;
+            int temp = matrix[y1][x1];
+            int min = temp;
 
-            Queue<Integer> queue = new LinkedList<>();
-
-            for(int dx = x1; dx <= x2; dx++) {
-                int temp = matrix[y1][dx];
-                if(!queue.isEmpty()) matrix[y1][dx] = queue.poll();
-                queue.add(temp);
-
-                if(matrix[y1][dx] < min) min = matrix[y1][dx];
+            for(int dy = y1; dy < y2; dy++){
+                matrix[dy][x1] = matrix[dy+1][x1];
+                if(min > matrix[dy][x1]) min = matrix[dy][x1];
             }
-
-            for(int dy = y1 + 1; dy <= y2; dy++) {
-                int temp = matrix[dy][x2];
-                if(!queue.isEmpty()) matrix[dy][x2] = queue.poll();
-                queue.add(temp);
-                if(matrix[dy][x2] < min) min = matrix[dy][x2];
+            for(int dx = x1; dx < x2; dx++){
+                matrix[y2][dx] = matrix[y2][dx+1];
+                if(min > matrix[y2][dx]) min = matrix[y2][dx];
             }
-
-            for(int dx = x2 - 1; dx >= x1; dx--) {
-                int temp = matrix[y2][dx];
-                if(!queue.isEmpty()) matrix[y2][dx] = queue.poll();
-                queue.add(temp);
-                if(matrix[y2][dx] < min) min = matrix[y2][dx];
+            for(int dy = y2; dy > y1; dy--){
+                matrix[dy][x2] = matrix[dy-1][x2];
+                if(min > matrix[dy][x2]) min = matrix[dy][x2];
             }
-
-            for(int dy = y2 - 1; dy >= y1; dy--) {
-                int temp = matrix[dy][x1];
-                if(!queue.isEmpty()) matrix[dy][x1] = queue.poll();
-                queue.add(temp);
-                if(matrix[dy][x1] < min) min = matrix[dy][x1];
+            for(int dx = x2; dx > x1; dx--){
+                matrix[y1][dx] = matrix[y1][dx-1];
+                if(min > matrix[y1][dx]) min = matrix[y1][dx];
             }
-
+            matrix[y1][x1+1] = temp;
             answer[i] = min;
         }
 
