@@ -42,7 +42,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="애플리케이션.RotateMatrixBorders">
+  <component name="RunManager" selected="애플리케이션.Spicier">
     <configuration name="HIndex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sorting.HIndex" />
       <module name="level2" />
@@ -82,12 +82,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VisitLength" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="summerwintercoding.VisitLength" />
+    <configuration name="Spicier" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="heap.Spicier" />
       <module name="level2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="summerwintercoding.*" />
+          <option name="PATTERN" value="heap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,11 +110,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.Spicier" />
         <item itemvalue="애플리케이션.RotateMatrixBorders" />
         <item itemvalue="애플리케이션.VowelDictionary" />
         <item itemvalue="애플리케이션.RotateParentheses" />
         <item itemvalue="애플리케이션.HIndex" />
-        <item itemvalue="애플리케이션.VisitLength" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +184,8 @@
       <workItem from="1683264419896" duration="4329000" />
       <workItem from="1683381175040" duration="7000" />
       <workItem from="1683528568957" duration="8648000" />
-      <workItem from="1683623959886" duration="3608000" />
+      <workItem from="1683623959886" duration="4443000" />
+      <workItem from="1684227703560" duration="2382000" />
     </task>
     <servers />
   </component>
