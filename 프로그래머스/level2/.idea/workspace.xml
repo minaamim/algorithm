@@ -42,7 +42,20 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="애플리케이션.PrimeNumber">
+  <component name="RunManager" selected="애플리케이션.PrimeNum2">
+    <configuration name="PrimeNum2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bruteforce.PrimeNum2" />
+      <module name="level2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bruteforce.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PrimeNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bruteforce.PrimeNumber" />
       <module name="level2" />
@@ -95,26 +108,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VowelDictionary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bruteforce.VowelDictionary" />
-      <module name="level2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bruteforce.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.PrimeNum2" />
         <item itemvalue="애플리케이션.PrimeNumber" />
         <item itemvalue="애플리케이션.RepeatTransformation" />
         <item itemvalue="애플리케이션.Spicier" />
         <item itemvalue="애플리케이션.RotateMatrixBorders" />
-        <item itemvalue="애플리케이션.VowelDictionary" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +188,10 @@
       <workItem from="1684227703560" duration="3083000" />
       <workItem from="1684310805631" duration="21000" />
       <workItem from="1684320170303" duration="2208000" />
-      <workItem from="1684492985528" duration="2895000" />
+      <workItem from="1684492985528" duration="3599000" />
+      <workItem from="1684743837583" duration="7766000" />
+      <workItem from="1684824813364" duration="1385000" />
+      <workItem from="1685004397092" duration="5625000" />
     </task>
     <servers />
   </component>
