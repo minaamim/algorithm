@@ -42,7 +42,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="애플리케이션.Joystick">
+  <component name="RunManager" selected="애플리케이션.Network">
     <configuration name="EmojiEvent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="kakaoblind.EmojiEvent" />
       <module name="level2" />
@@ -69,6 +69,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Network" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dfsbfs.Network" />
+      <module name="level2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dfsbfs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PrimeNum2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bruteforce.PrimeNum2" />
       <module name="level2" />
@@ -82,25 +95,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrimeNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bruteforce.PrimeNumber" />
+    <configuration name="TargetNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dfsbfs.TargetNumber" />
       <module name="level2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bruteforce.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RepeatTransformation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="codechallenge.RepeatTransformation" />
-      <module name="level2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="codechallenge.*" />
+          <option name="PATTERN" value="dfsbfs.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,11 +110,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.Network" />
+        <item itemvalue="애플리케이션.TargetNumber" />
         <item itemvalue="애플리케이션.Joystick" />
         <item itemvalue="애플리케이션.EmojiEvent" />
         <item itemvalue="애플리케이션.PrimeNum2" />
-        <item itemvalue="애플리케이션.PrimeNumber" />
-        <item itemvalue="애플리케이션.RepeatTransformation" />
       </list>
     </recent_temporary>
   </component>
@@ -192,7 +192,8 @@
       <workItem from="1684743837583" duration="7766000" />
       <workItem from="1684824813364" duration="1385000" />
       <workItem from="1685004397092" duration="6962000" />
-      <workItem from="1685088394820" duration="8110000" />
+      <workItem from="1685088394820" duration="8229000" />
+      <workItem from="1685097468010" duration="3123000" />
     </task>
     <servers />
   </component>
