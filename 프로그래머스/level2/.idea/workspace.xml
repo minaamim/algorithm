@@ -42,7 +42,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="애플리케이션.Network">
+  <component name="RunManager" selected="애플리케이션.StockPrice">
     <configuration name="EmojiEvent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="kakaoblind.EmojiEvent" />
       <module name="level2" />
@@ -82,12 +82,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrimeNum2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bruteforce.PrimeNum2" />
+    <configuration name="StockPrice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stack.StockPrice" />
       <module name="level2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bruteforce.*" />
+          <option name="PATTERN" value="stack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,11 +110,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.StockPrice" />
         <item itemvalue="애플리케이션.Network" />
         <item itemvalue="애플리케이션.TargetNumber" />
         <item itemvalue="애플리케이션.Joystick" />
         <item itemvalue="애플리케이션.EmojiEvent" />
-        <item itemvalue="애플리케이션.PrimeNum2" />
       </list>
     </recent_temporary>
   </component>
@@ -193,7 +193,8 @@
       <workItem from="1684824813364" duration="1385000" />
       <workItem from="1685004397092" duration="6962000" />
       <workItem from="1685088394820" duration="8229000" />
-      <workItem from="1685097468010" duration="3123000" />
+      <workItem from="1685097468010" duration="4550000" />
+      <workItem from="1685280533841" duration="441000" />
     </task>
     <servers />
   </component>
