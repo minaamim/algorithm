@@ -1,9 +1,6 @@
 package stack;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
 public class Development {
 
@@ -11,36 +8,39 @@ public class Development {
         int[] progresses = {93, 30, 55};
         int[] speeds = {1, 30, 5};
 
+        int[] progresses1 = { 95, 90, 99, 99, 80, 99 };
+        int[] speeds1 = {1, 1, 1, 1, 1, 1};
+
         solution(progresses, speeds);
+        solution(progresses1, speeds1);
     }
 
 
     public static int[] solution(int[] progresses, int[] speeds) {
-        /**
-         * progresses: 먼저 배포돼야하는 순서대로 작업의 진도가 적힌 배열
-         * speeds: 각 작업의 개발 속도
-         */
-
-        List<Integer> answer = new ArrayList<>();
+        int[] answer;
 
         Queue<Integer> queue = new LinkedList<>();
+        List<Integer> ans = new ArrayList<>();
 
-        //작업 일수 저장
-        for(int i = 0; i < progresses.length; i++)
-            queue.add((int) Math.ceil((100.0 - progresses[i]) / speeds[i]));
-
+        for (int i = 0; i < progresses.length; i++) queue.add((int) Math.ceil((100.0 - progresses[i]) / speeds[i]));
 
         while(!queue.isEmpty()) {
-            int day = queue.poll();
             int cnt = 1;
+            int day = queue.poll();
 
-            while (!queue.isEmpty() && day >= queue.peek()) {
+            while(!queue.isEmpty() && day >= queue.peek()) {
                 cnt++;
                 queue.poll();
             }
-            answer.add(cnt);
+            ans.add(cnt);
         }
+        answer = new int[ans.size()];
 
-        return answer.stream().mapToInt(Integer::intValue).toArray();
+        int index = 0;
+        for(int i : ans) {
+            answer[index] = i;
+            index++;
+        }
+        return answer;
     }
 }
