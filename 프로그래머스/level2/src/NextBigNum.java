@@ -10,18 +10,20 @@ public class NextBigNum {
 
     public static int[] solution(int[] numbers) {
         int[] answer = new int[numbers.length];
+        Stack<Integer> stack = new Stack<>();
 
-        for(int i = 0; i < numbers.length; i++) {
-            int now = numbers[i];
-            for(int j = i; j < numbers.length; j++) {
-                int next = numbers[j];
-                if (next > now) {
-                    answer[i] = next;
+        for(int i = numbers.length - 1; i >= 0; i--) {
+
+            while (!stack.isEmpty()) {
+                if (stack.peek() > numbers[i]) {
+                    answer[i] = stack.peek();
                     break;
-                } else answer[i] = -1;
+                } else stack.pop();
             }
-        }
 
+            if (stack.isEmpty()) answer[i] = -1;
+            stack.add(numbers[i]);
+        }
         return answer;
     }
 
