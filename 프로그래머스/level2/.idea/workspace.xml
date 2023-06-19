@@ -42,7 +42,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="애플리케이션.stack.NextBigNum">
+  <component name="RunManager" selected="애플리케이션.SearchRanking">
     <configuration name="BiggestNum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sorting.BiggestNum" />
       <module name="level2" />
@@ -69,12 +69,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Network" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dfsbfs.Network" />
+    <configuration name="SearchRanking" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kakaoblind.SearchRanking" />
       <module name="level2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dfsbfs.*" />
+          <option name="PATTERN" value="kakaoblind.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,11 +104,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.SearchRanking" />
         <item itemvalue="애플리케이션.stack.NextBigNum" />
         <item itemvalue="애플리케이션.Development" />
         <item itemvalue="애플리케이션.BiggestNum" />
         <item itemvalue="애플리케이션.StockPrice" />
-        <item itemvalue="애플리케이션.Network" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +197,11 @@
       <workItem from="1685876325356" duration="1949000" />
       <workItem from="1685970386267" duration="2262000" />
       <workItem from="1686055051261" duration="1412000" />
-      <workItem from="1686115166503" duration="5042000" />
+      <workItem from="1686115166503" duration="5520000" />
+      <workItem from="1686128497448" duration="605000" />
+      <workItem from="1686390353006" duration="614000" />
+      <workItem from="1686899944763" duration="1857000" />
+      <workItem from="1687174408038" duration="6002000" />
     </task>
     <servers />
   </component>
