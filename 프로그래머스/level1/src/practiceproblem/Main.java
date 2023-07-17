@@ -1,3 +1,4 @@
+package practiceproblem;
 
 public class Main {
 

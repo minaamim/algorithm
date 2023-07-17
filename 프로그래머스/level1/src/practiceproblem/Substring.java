@@ -1,3 +1,5 @@
+package practiceproblem;
+
 public class Substring {
     public int solution(String t, String p) {
         int answer = 0;

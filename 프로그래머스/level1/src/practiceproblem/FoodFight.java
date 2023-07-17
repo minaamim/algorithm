@@ -1,4 +1,4 @@
-
+package practiceproblem;
 
 public class FoodFight {
     public String solution(int[] food) {

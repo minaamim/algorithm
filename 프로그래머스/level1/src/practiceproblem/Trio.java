@@ -1,3 +1,5 @@
+package practiceproblem;
+
 public class Trio {
 
     public int solution(int[] number) {

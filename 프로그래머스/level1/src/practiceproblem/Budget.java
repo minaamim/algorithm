@@ -1,3 +1,5 @@
+package practiceproblem;
+
 import java.util.Arrays;
 
 public class Budget {

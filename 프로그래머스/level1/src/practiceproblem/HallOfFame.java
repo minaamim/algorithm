@@ -1,3 +1,5 @@
+package practiceproblem;
+
 import java.util.PriorityQueue;
 
 public class HallOfFame {

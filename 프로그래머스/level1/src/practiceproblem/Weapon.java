@@ -1,3 +1,5 @@
+package practiceproblem;
+
 public class Weapon {
     public int solution(int number, int limit, int power) {
         /**
