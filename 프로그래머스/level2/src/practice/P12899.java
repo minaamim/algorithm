@@ -1,3 +1,5 @@
+package practice;
+
 public class P12899 {
 
     public static void main(String args[]) {

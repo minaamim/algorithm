@@ -1,3 +1,5 @@
+package practice;
+
 import java.util.PriorityQueue;
 
 public class Defence {

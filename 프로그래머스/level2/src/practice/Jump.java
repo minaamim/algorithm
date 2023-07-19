@@ -1,3 +1,5 @@
+package practice;
+
 public class Jump {
     public int solution(int n) {
         int ans = 0;

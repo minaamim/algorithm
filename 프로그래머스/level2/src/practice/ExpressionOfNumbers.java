@@ -1,3 +1,5 @@
+package practice;
+
 public class ExpressionOfNumbers {
     public int solution(int n) {
         int answer = 0;

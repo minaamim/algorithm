@@ -1,3 +1,5 @@
+package practice;
+
 public class LongJump {
 
     public long solution(int n) {
