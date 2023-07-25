@@ -8,24 +8,22 @@ public class P154538 {
         System.out.println(solution(2, 5, 4));
     }
 
-    static int ans = Integer.MAX_VALUE;
-
     public static int solution(int x, int y, int n) {
-        dfs(x, y, n, 0);
-        if(ans == Integer.MAX_VALUE) return -1;
-        return ans;
-    }
+        int[] dp = new int[y + 1];
+        for (int i = 0; i <= y; i++) dp[i] = Integer.MAX_VALUE;
 
-    private static void dfs(int now, int y, int n, int cnt) {
-        if(now > y) return;
-        if(y == now) {
-            ans = Math.min(ans, cnt);
-            return;
+        dp[x] = 0;
+
+        for(int i = x; i <= y; i++) {
+            if(dp[i] == Integer.MAX_VALUE) continue;
+            if(i + n <= y) dp[i + n] = Math.min(dp[i + n], dp[i] + 1);
+            if(i * 2 <= y) dp[i * 2] = Math.min(dp[i * 2], dp[i] + 1);
+            if(i *3 <= y) dp[i * 3] = Math.min(dp[i * 3], dp[i] + 1);
         }
 
-        dfs(now * 2, y, n, cnt + 1);
-        dfs(now * 3, y, n, cnt + 1);
-        dfs(now + n, y, n, cnt + 1);
+        if(dp[y] == Integer.MAX_VALUE) return -1;
+        return dp[y];
     }
+
 
 }
