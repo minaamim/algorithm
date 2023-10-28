@@ -8,40 +8,37 @@ public class Boj1253 {
     public static void main(String args[]) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        int answer = 0;
-
         int N = Integer.parseInt(br.readLine());
-        int[] arr = new int[N];
-
         StringTokenizer st = new StringTokenizer(br.readLine());
 
-        int idx = 0;
-        while(st.hasMoreTokens()) arr[idx++] = Integer.parseInt(st.nextToken());
+        int arr[] = new int[N];
+        int answer = 0;
+
+        for(int i = 0; i < N; i++) {
+            arr[i] = Integer.parseInt(st.nextToken());
+        }
 
         Arrays.sort(arr);
 
-        for(int i = 0; i < arr.length; i++) {
-            int target = arr[i];
+        for(int k = 0; k < arr.length; k++) {
+            long find = arr[k];
+            int i = 0, j = N - 1;
 
-            int start = 0, end = arr.length - 1;
-            int sum;
-
-            while(start < end) {
-                sum = arr[start] + arr[end];
-
-                if(sum == target) {
-                    if(start == i) start++;
-                    else if(end == i) end--;
-                    else {
+            while(i < j) {
+                int sum = arr[i] + arr[j];
+                if(sum == find) {
+                    if(i != k && j != k) {
                         answer++;
                         break;
-                    }
+                    } else if(i == k) i++;
+                    else if(j == k) j--;
+                } else if(sum > find) {
+                    j--;
+                } else if(sum < find) {
+                    i++;
                 }
-                if(sum > target) end--;
-                else if(sum < target) start++;
             }
         }
-
         System.out.println(answer);
     }
 }
