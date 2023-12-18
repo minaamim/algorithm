@@ -8,20 +8,44 @@ public class Boj1920 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         int N = Integer.parseInt(br.readLine());
-        List<Integer> list = new ArrayList<>();
         StringTokenizer st = new StringTokenizer(br.readLine());
+
+        int[] arr = new int[N];
+
         for(int i = 0; i < N; i++) {
-            list.add(Integer.parseInt(st.nextToken()));
+            arr[i] = Integer.parseInt(st.nextToken());
         }
+
+        Arrays.sort(arr);
 
         int M = Integer.parseInt(br.readLine());
         st = new StringTokenizer(br.readLine());
-        for(int i = 0; i < M ; i++) {
-            if(list.contains(Integer.parseInt(st.nextToken()))) {
-                System.out.println("1");
-                continue;
+
+        for(int i = 0; i < M; i++) {
+            boolean find = false;
+            int target = Integer.parseInt(st.nextToken());
+
+            int start = 0;
+            int end = arr.length - 1;
+
+            while(start <= end) {
+                int mid = (start + end) / 2;
+                int value = arr[mid];
+                if(value > target) {
+                    end = mid - 1;
+                } else if(value < target) {
+                    start = mid + 1;
+                } else {
+                    find = true;
+                    break;
+                }
             }
-            System.out.println("0");
+
+            if (find) {
+                System.out.println("1");
+            } else {
+                System.out.println("0");
+            }
         }
     }
 }
