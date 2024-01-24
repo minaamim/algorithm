@@ -1,4 +1,4 @@
-package daikstra;
+package dijkstra;
 
 import java.io.*;
 import java.util.*;
