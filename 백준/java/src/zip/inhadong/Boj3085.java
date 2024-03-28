@@ -1,4 +1,4 @@
-package prepare_inhadong;
+package zip.inhadong;
 
 import java.io.*;
 import java.util.*;

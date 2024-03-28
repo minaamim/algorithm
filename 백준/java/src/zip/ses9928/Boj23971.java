@@ -1,4 +1,4 @@
-package prepare_ses9928;
+package zip.ses9928;
 
 import java.io.*;
 import java.util.*;
