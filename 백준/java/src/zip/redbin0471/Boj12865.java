@@ -28,7 +28,7 @@ public class Boj12865 {
             for(int i = 1; i <= N; i++) {
                 dp[i][k] = dp[i - 1][k];
                 if(k - item[i][0] >= 0) {
-                    dp[i][k] = Math.max(dp[i - 1][k], item[i][1] + dp[i - 1][k - item[i][0]]);
+                    dp[i][k] = Math.max(dp[i][k], item[i][1] + dp[i - 1][k - item[i][0]]);
                 }
             }
         }
