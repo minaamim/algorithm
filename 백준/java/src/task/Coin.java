@@ -22,9 +22,7 @@ public class Coin {
         combination(0, 0, comb);
         return ans;
     }
-
-
-
+    
     private static void combination(int idx, int sum, List<Integer> comb) {
         if(sum > total) return;
 
